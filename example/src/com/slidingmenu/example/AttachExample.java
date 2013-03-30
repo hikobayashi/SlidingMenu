@@ -1,6 +1,7 @@
 package com.slidingmenu.example;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 
 import com.slidingmenu.lib.SlidingMenu;
@@ -19,7 +20,7 @@ public class AttachExample extends FragmentActivity {
 		setContentView(R.layout.content_frame);
 		getSupportFragmentManager()
 		.beginTransaction()
-		.replace(R.id.content_frame, new SampleListFragment())
+		.replace(R.id.content_frame, new Fragment())
 		.commit();
 
 		// configure the SlidingMenu
